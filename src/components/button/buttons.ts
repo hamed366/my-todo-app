@@ -39,7 +39,18 @@ function createClearBtn() {
     return btn;
 }
 
+function createAddNewBtn() {
+    const btn = document.createElement('button');
+
+    btn.classList.add('btn', 'add');
+    btn.innerText = 'Add new TODO';
+
+    btn.onclick = onClearBtnClick;
+
+    return btn;
+}
 
 
 document.body.appendChild(createAddBtn());
+document.body.appendChild(createAddNewBtn());
 document.body.appendChild(createClearBtn());
