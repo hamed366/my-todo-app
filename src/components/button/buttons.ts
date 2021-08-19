@@ -39,5 +39,7 @@ function createClearBtn() {
     return btn;
 }
 
+
+
 document.body.appendChild(createAddBtn());
 document.body.appendChild(createClearBtn());
